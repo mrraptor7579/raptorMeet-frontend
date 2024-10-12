@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif; /* Using Poppins font */
+    background: linear-gradient(135deg, #13253c, #0b1215); /* Darker gradient background */
+    overflow: hidden;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.navbar {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #162732; /* Light blue background for the navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3; /* Ensure the navbar is above the container */
+}
+.navbar h2 {
+    color: #ffffff; /* White text color for navbar title */
+    margin: 0;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li a {
+    color: #ffffff; /* White text color for navbar links */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.navbar ul li a:hover {
+    color: #f1faee; /* Light hover effect */
+}
+.branding-header {
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    color: #ffffff; /* Light color for branding */
+    left: 980px;
+}
+.branding-header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.branding-header p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+    opacity: 0.8; /* Slightly more opaque */
+}
+.abstract-design {
+    position: absolute;
+    top: -100px;
+    right: -150px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1), transparent);
+    transform: rotate(45deg);
+    z-index: 1;
+}
+.abstract-design2 {
+    position: absolute;
+    bottom: -100px;
+    left: -150px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1), transparent);
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+.bg-img{
+    position: absolute;
+    background-image: url('bg-img.png');
+    width: 600px;
+    height: 400px;
+    left: 300px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 0px 25px  rgba(170, 167, 167, 0.278);
+
+
+
+}
+.container {
+    background-color: #0e1620; /* White background for container */
+    max-width: 400px;
+    width: 100%;
+    padding: 40px;
+    box-shadow: 0px 15px 20px rgba(90, 89, 89, 0.1); /* Light shadow */
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    left: 200px;
+    z-index: 2;
+}
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff; /* Darker text for heading */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+p {
+    font-size: 14px;
+    color: #ffffff; /* Dark gray color for text */
+    margin-bottom: 25px;
+}
+.input-field {
+    margin-bottom: 20px;
+}
+.input-field input {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    outline: none;
+}
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn.create {
+    background-color: #839393; /* Light teal for create button */
+}
+.btn.logout {
+    background-color: #a81515; /* Light teal for create button */
+}
+.btn.logout:hover {
+    background-color: #e80e0e; /* Light teal for create button */
+}
+.btn.create:hover {
+    background-color: #81c8d8; /* Darker shade for hover */
+}
+.btn.join {
+    background-color: #457B9D; /* Light blue for join button */
+}
+.btn.join:hover {
+    background-color: #2a7d8e; /* Darker shade for hover */
+}
+.btn img {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+.or {
+    font-size: 14px;
+    color: #888;
+    margin: 15px 0;
+}
+footer {
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
+.branding{
+    width: 100px;
+}
+.branding img{
+    width: 300%;
+    filter: drop-shadow(0px 0px 5px white);
+}

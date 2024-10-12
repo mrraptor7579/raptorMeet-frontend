@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif; /* Using Poppins font */
+    background: linear-gradient(135deg, #13253c, #0b1215); /* Darker gradient background */
+    overflow: hidden;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.navbar {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #162732; /* Light blue background for the navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3; /* Ensure the navbar is above the container */
+}
+.navbar img {
+    height: 60px; /* Adjust the logo height */
+    margin-right: 10px; /* Space between logo and title */
+    filter: drop-shadow(0px 0px 5px white); /* Drop shadow effect for the logo */
+}
+.navbar h2 {
+    color: #ffffff; /* White text color for navbar title */
+    margin: 0;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li a {
+    color: #ffffff; /* White text color for navbar links */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.navbar ul li a:hover {
+    color: #f1faee; /* Light hover effect */
+}
+.container {
+    background-color: #0e1620; /* Dark background for container */
+    max-width: 400px;
+    width: 100%;
+    padding: 40px;
+    box-shadow: 0px 6px 20px rgba(90, 89, 89, 0.1); /* Light shadow */
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    margin-top: 80px; /* Spacing below the navbar */
+}
+.container img {
+    width: 300px; /* Adjust the logo size in the form */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Spacing below the logo */
+    filter: drop-shadow(0px 0px 5px white); /* Drop shadow effect for the form logo */
+}
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff; /* Light color for heading */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.input-field {
+    margin-bottom: 20px;
+}
+.input-field input {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    outline: none;
+    background-color: #ffffff; /* White background for input fields */
+    color: #333; /* Dark text for input fields */
+}
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn.login {
+    background-color: #457B9D; /* Light blue for login button */
+}
+.btn.login:hover {
+    background-color: #2a7d8e; /* Darker shade for hover */
+}
+.btn.register {
+    background-color: #839393; /* Light teal for register button */
+}
+.btn.register:hover {
+    background-color: #81c8d8; /* Darker shade for hover */
+}
+.footer {
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
